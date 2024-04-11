@@ -1,0 +1,41 @@
+/* style.css */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.contenedor {
+    display: flex;
+}
+
+#tablero {
+    display: grid;
+    min-width: 1080px; /* Ejemplo para un tablero con 18 columnas a 60px cada una */
+    min-height: 600px;
+    margin-right: 20px; /* Espacio entre el tablero y las opciones */
+    background-image: url('FondoSpace.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(18, 60px);
+    grid-template-rows: repeat(10, 60px);
+    grid-gap: 1px;
+    border: 1px solid #000; /* Añadido para visualizar las celdas si no hay imagen de fondo */
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.celda {
+    border: 1px solid #ddd; /* Añadido para visualizar las celdas si no hay imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+

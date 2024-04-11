@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Estático con Opciones</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div id="tablero"></div>
+        <div class="opciones">
+            <!-- Radio buttons para seleccionar la imagen -->
+            <label>
+                <input type="radio" name="imagen" value="obstaculo.jpg" checked> Obstaculos
+            </label>
+            <label>
+                <input type="radio" name="imagen" value="Agente.jpg"> Agente
+            </label>
+            <label>
+                <input type="radio" name="imagen" value="Muestra.webp"> Muestra
+            </label>
+            <label>
+                <input type="radio" name="imagen" value="Nave.webp"> Destino
+            </label>
+            <!-- Asegúrate de cambiar las rutas a las rutas reales de tus imágenes -->
+            <br>
+            <button type="button" id="btnInicio">Iniciar</button>
+        </div>   
+    </div>
+    
+    <script src="funcion.js"></script>
+</body>
+</html>
